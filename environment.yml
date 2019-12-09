@@ -1,0 +1,12 @@
+name: base
+channels:
+  - defaults
+dependencies:
+  - beautifulsoup4=4.7.1=py37_1
+  - matplotlib=3.1.0
+  - numpy=1.16.4=py37h19fb1c0_0
+  - numpy-base=1.16.4=py37hc3f5095_
+  - pandas=0.24.2=py37ha925a31_0
+  - seaborn=0.9.0=pyh91ea838_1
+  - pip:
+    - folium==0.10.0
