@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
-import os
+
 
 def correlation_matrix():
     conn = sqlite3.connect(r'..\data\final_project.db')
@@ -22,8 +22,6 @@ def correlation_matrix():
     sns.heatmap(data.corr(),xticklabels=columns,yticklabels=columns,cmap="RdYlGn",center=0,annot=True)
 
     plt.xticks(rotation=45,horizontalalignment="right")
-    path=os.getcwd()
-    #plt.savefig(f"{path}\correlation matrix.png", bbox_inches='tight')
     plt.show()
 
 def run_correlation_matrix():
