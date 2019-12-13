@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
-import os
+
 
 def income_relation(sql,cm,name):
     conn=sqlite3.connect(r"..\data\final_project.db")
@@ -34,7 +34,7 @@ def income_relation(sql,cm,name):
         popu_density.append(density/10)
         crime_rate=info[3]
         crime_rates.append(crime_rate)
-    #画图
+    
     plt.figure(num=3, figsize=(15, 15))
 
     sc=plt.scatter(incomes,values
@@ -56,8 +56,7 @@ def income_relation(sql,cm,name):
     cb=plt.colorbar()
     cb.set_label("Crime rate")
     plt.legend()
-    path=os.getcwd()
-    #plt.savefig(f"{path}\{name}.png", dpi=100,bbox_inches='tight')
+    
     plt.show()
 
     conn.close()
