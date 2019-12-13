@@ -22,7 +22,8 @@ def correlation_matrix():
     sns.heatmap(data.corr(),xticklabels=columns,yticklabels=columns,cmap="RdYlGn",center=0,annot=True)
 
     plt.xticks(rotation=45,horizontalalignment="right")
-    plt.savefig("correlation matrix.png", bbox_inches='tight')
+    path=os.getcwd()
+    plt.savefig(f"{path}\correlation matrix.png", bbox_inches='tight')
     plt.show()
 
 def run_correlation_matrix():
