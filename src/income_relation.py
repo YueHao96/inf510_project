@@ -57,7 +57,7 @@ def income_relation(sql,cm,name):
     cb.set_label("Crime rate")
     plt.legend()
     path=os.getcwd()
-    plt.savefig(f"{path}\{name}.png", dpi=100,bbox_inches='tight')
+    #plt.savefig(f"{path}\{name}.png", dpi=100,bbox_inches='tight')
     plt.show()
 
     conn.close()
