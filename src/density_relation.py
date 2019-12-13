@@ -50,7 +50,7 @@ def density_relation():
     cb.set_label("Crime rate")
     plt.legend()
     path=os.getcwd()
-    plt.savefig(f"{path}\Density and other factors.png", dpi=80,bbox_inches='tight')
+    #plt.savefig(f"{path}\Density and other factors.png", dpi=80,bbox_inches='tight')
     plt.show()
 
     conn.close()
