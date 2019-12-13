@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
-import os
 
 def density_relation():
     conn=sqlite3.connect(r"..\data\final_project.db")
@@ -49,8 +48,7 @@ def density_relation():
     cb=plt.colorbar()
     cb.set_label("Crime rate")
     plt.legend()
-    path=os.getcwd()
-    #plt.savefig(f"{path}\Density and other factors.png", dpi=80,bbox_inches='tight')
+
     plt.show()
 
     conn.close()
