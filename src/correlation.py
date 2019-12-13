@@ -23,7 +23,7 @@ def correlation_matrix():
 
     plt.xticks(rotation=45,horizontalalignment="right")
     path=os.getcwd()
-    plt.savefig(f"{path}\correlation matrix.png", bbox_inches='tight')
+    #plt.savefig(f"{path}\correlation matrix.png", bbox_inches='tight')
     plt.show()
 
 def run_correlation_matrix():
